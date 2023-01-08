@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap");
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5em;
+  font-family: "Comfortaa", sans-serif, Helvetica;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  margin: 1.5em auto;
+  max-width: 600px;
+}
+
+h1,
+h2 {
+  font-family: "Kaushan Script", sans-serif, Helvetica;
+}
+
+p {
+  font-family: "Comfortaa", sans-serif, Helvetica;
+}
+
+.head_container {
+  height: 260px;
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: rgb(33, 102, 186);
+  display: flex;
+  padding: 0 40px;
+}
+
+.myphoto {
+  width: 150px;
+  height: 200px;
+  border-radius: 10%;
+  border: 2px solid red;
+  margin: auto auto;
+}
+
+.name {
+  margin: auto auto;
+}
+
+.title {
+  margin: auto 20px;
+}
+
+hr {
+  margin-top: 10px;
+  width: 90%;
+}
+
+ul {
+  margin: 0 30px;
+}
+
+li {
+  font-family: sans-serif, Helvetica;
+  font-size: 0.85em;
+}
+
+.comment {
+  font-size: 0.7em;
+  margin: -10px 30px;
+  color: rgba(0, 0, 0, 0.667);
+}
+
+p a {
+  text-decoration: underline;
+}
+
+.container_footer {
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: rgb(33, 102, 186);
+  padding: 20px 30px;
+  font-size: 0.9em;
+}
+
+.container_footer p {
+  margin: 0 auto;
+}
+
+.container_footer p:nth-of-type(1) {
+  color: white;
+  margin-left: 90px;
+}
+
+.container_footer p:nth-of-type(2) {
+  color: yellow;
+}
