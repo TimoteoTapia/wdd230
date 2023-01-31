@@ -22,7 +22,7 @@ header {
   align-items: center;
 }
 
-header div.header_container section {
+header div.header_container div section {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -47,12 +47,16 @@ header picture {
 
 .logo {
   width: 5rem;
-  margin-left: -0.5rem;
+  margin-left: -0.7rem;
   height: auto;
   border-radius: 50%;
 }
 
-.social {
+.grid_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 30%;
 }
 
 .social a {
@@ -127,7 +131,44 @@ navigation a:active {
   content: "X";
 }
 
-/*Footer*/
+/* Main */
+
+.grid_container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-row-gap: 1rem;
+  justify-items: center;
+  margin: 1.2rem 3vw;
+}
+
+.grid_container div {
+  width: 90%;
+  height: 200px;
+  background-color: grey;
+  padding: 1rem 1rem;
+}
+
+.spotlights {
+  background-color: gray;
+  grid-column: 1;
+  grid-row: span 2 / 7;
+  width: 90%;
+  height: 94%;
+  margin: 0 3vw;
+  padding: 1rem 1rem;
+}
+
+.spotlights div:first-child {
+  border: 1px solid black;
+}
+
+.spotlights div:last-child {
+  border: 1px solid black;
+}
+
+/* Footer */
 
 footer {
   background-color: #1f4f70;
@@ -158,7 +199,9 @@ footer p:first-child span:nth-child(2) {
 }
 
 hr {
-  color: #e48240;
+  height: 1px;
+  background-color: #e48240;
+  border: none;
   width: 95%;
 }
 
