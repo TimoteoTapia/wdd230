@@ -1,3 +1,5 @@
+/* Mobile View ***************/
+
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap");
 
 body {
@@ -150,22 +152,32 @@ navigation a:active {
   padding: 1rem 1rem;
 }
 
+.grid_container div:nth-child(3) {
+  display: none;
+}
+
 .spotlights {
   background-color: gray;
   grid-column: 1;
   grid-row: span 2 / 7;
   width: 90%;
-  height: 94%;
+  height: 400px;
   margin: 0 3vw;
   padding: 1rem 1rem;
 }
 
 .spotlights div:first-child {
   border: 1px solid black;
+  height: 41%;
 }
 
-.spotlights div:last-child {
+.spotlights div:nth-child(2) {
   border: 1px solid black;
+  height: 41%;
+}
+
+.spotlights div:nth-child(3) {
+  display: none;
 }
 
 /* Footer */
@@ -173,13 +185,18 @@ navigation a:active {
 footer {
   background-color: #1f4f70;
   color: white;
+  padding: 0.5rem 3vw;
+  margin-top: -50px;
+}
+
+.grid_footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer p {
+footer div {
   font-weight: lighter;
   font-size: 0.9rem;
   display: flex;
@@ -188,11 +205,18 @@ footer p {
   margin: 0.8rem 0;
 }
 
-footer p span {
+.footer_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+}
+
+footer span {
   margin: 0.1rem 0;
 }
 
-footer p:first-child span:nth-child(2) {
+.footer_title span:first-child {
   margin: 0.1rem 0;
   font-weight: bold;
   font-size: 1rem;
@@ -205,11 +229,11 @@ hr {
   width: 95%;
 }
 
-footer p:nth-child(4) {
+footer div:nth-child(3) {
   font-size: 0.8rem;
 }
 
-footer p:nth-child(4) span:nth-child(2) {
+footer div:nth-child(3) span:nth-child(2) {
   font-weight: bold;
   font-size: 1rem;
 }
