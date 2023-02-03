@@ -12,6 +12,11 @@ body {
   font-family: Acme, Arial, sans-serif;
 }
 
+.container {
+  background-color: rgb(41, 228, 63);
+  border: 1px solid black;
+}
+
 h1 {
   font-size: 1.5rem;
 }
