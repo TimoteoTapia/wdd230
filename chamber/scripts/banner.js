@@ -1,7 +1,7 @@
 //Announcement on Mondays and Tuesdays
 const announcement = document.querySelector("#banner");
 const today = new Date();
-if (today.getDay() == 1 || today.getDay() == 3) {
+if (today.getDay() == 1 || today.getDay() == 2) {
   announcement.style.display = "block";
 }
 
