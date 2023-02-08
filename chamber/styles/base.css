@@ -11,6 +11,69 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2 {
+  font-family: "Kaushan Script", sans-serif, Helvetica;
+}
+
+h3 {
+  font-family: "Comfortaa", sans-serif, Helvetica;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner */
+
+#banner {
+  display: none;
+  background-color: #1f4f70;
+  height: 100px;
+  position: relative;
+}
+
+#close_banner {
+  position: absolute;
+  background-color: #e48240;
+  color: white;
+  border: 2px solid #e48240;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+}
+
+#close_banner:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.banner_content {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-right: 5rem;
+}
+
+.banner_content > p {
+  color: white;
+  text-align: center;
+}
+
+.banner_img {
+  display: block;
+  position: absolute;
+  height: 100px;
+  top: 5px;
+  right: -5px;
+}
+
+/* Header*/
+
 header {
   display: flex;
   flex-direction: column;
@@ -135,6 +198,151 @@ navigation a:active {
 
 /* Main */
 
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  margin: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero > h3 {
+  position: absolute;
+  color: white;
+  top: 3px;
+  text-shadow: -2px 2px black;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-join {
+  position: absolute;
+  text-decoration: none;
+  background-color: #1f4f70;
+  color: white;
+  border: 1px solid black;
+  border-radius: 20%;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 0 0 5px 4px white;
+}
+
+.hero-join:hover {
+  background-color: black;
+  color: white;
+}
+
+.event {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event > h2 {
+  text-shadow: -2px 1px 1px white;
+  margin-bottom: 0;
+  margin-top: 0.3rem;
+}
+
+.event > h3 {
+  font-style: italic;
+  font-weight: bold;
+  box-shadow: 0 10px 7px -7px yellow;
+  width: 220px;
+  margin-bottom: 0;
+}
+
+.event > p {
+  margin: 1.2rem 0.5rem;
+}
+
+.event > a {
+  text-decoration: none;
+  color: yellow;
+  text-shadow: -2px 1px 0 black;
+}
+
+.whether {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.whether h2,
+.delivery h2,
+.fix h2,
+.news h2 {
+  text-shadow: -2px 1px 1px white;
+  margin-bottom: 0.2rem;
+}
+
+.whether div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.whether div:first-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.whether-img {
+  width: 50px;
+}
+
+.whether > hr {
+  background-color: black;
+  width: 90%;
+}
+
+.whether div:last-child {
+  margin-bottom: 0.8rem;
+}
+
+.news {
+  text-align: center;
+}
+
+.news h2 {
+  text-shadow: -2px 1px 1px white;
+}
+
+.news p {
+  margin: 1rem;
+}
+
+.delivery,
+.fix {
+  text-align: center;
+}
+
+.delivery-img {
+  width: 120px;
+}
+
+.delivery p {
+  margin-top: -0.8rem;
+}
+
+.fix-img {
+  width: 200px;
+}
+
 .grid_container {
   box-sizing: border-box;
   display: grid;
@@ -145,35 +353,41 @@ navigation a:active {
   margin: 1.2rem 3vw;
 }
 
-.grid_container div {
-  width: 90%;
+.grid_container > div {
+  width: 100%;
+  background-color: #e48240;
   height: 200px;
-  background-color: grey;
-  padding: 1rem 1rem;
 }
 
-.grid_container div:nth-child(3) {
+.join {
   display: none;
 }
 
 .spotlights {
-  background-color: gray;
+  background-color: #e48240;
   grid-column: 1;
   grid-row: span 2 / 7;
-  width: 90%;
-  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
   margin: 0 3vw;
-  padding: 1rem 1rem;
 }
 
-.spotlights div:first-child {
+.delivery {
   border: 1px solid black;
-  height: 41%;
+  width: 90%;
+  height: 191px;
+  margin-top: 1rem;
 }
 
 .spotlights div:nth-child(2) {
   border: 1px solid black;
-  height: 41%;
+  width: 90%;
+  height: 191px;
+  margin-bottom: 1rem;
 }
 
 .spotlights div:nth-child(3) {
@@ -186,7 +400,7 @@ footer {
   background-color: #1f4f70;
   color: white;
   padding: 0.5rem 3vw;
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 
 .grid_footer {

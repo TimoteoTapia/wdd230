@@ -16,6 +16,16 @@
     <title>Chamber Home Page Build</title>
   </head>
   <body>
+    <div id="banner">
+      <div class="banner_content">
+        <button type="button" id="close_banner">X</button>
+        <p>
+          "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m."
+        </p>
+        <img class="banner_img" src="images/pets.png" alt="Close" />
+      </div>
+    </div>
     <header>
       <div class="header_container">
         <div class="heading">
@@ -54,15 +64,75 @@
     </header>
     <main>
       <article class="grid_container">
-        <div>Hero with site name and call to action</div>
-        <div>Event</div>
-        <div>Join</div>
-        <div>Weather</div>
-        <div>News Release</div>
+        <div class="hero">
+          <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" />
+          <h3>Welcome to Business City</h3>
+          <a href="index.html" class="hero-join">Join the Chamber </a>
+        </div>
+        <div class="event">
+          <h2>Meet Our Events</h2>
+          <h3>The Best Business</h3>
+          <p>
+            Join us for the grand opening of The Best Business, Thursday at
+            1:00pm
+          </p>
+          <a href="#">more info ...</a>
+        </div>
+        <div class="join">
+          <a href="index.html" class="hero-join">Join Us</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ips
+          </p>
+        </div>
+        <div class="whether">
+          <h2>Whether</h2>
+          <div>
+            <img
+              class="whether-img"
+              src="images/whether.png"
+              alt="wheter image"
+            />
+            <span>33C</span>
+          </div>
+          <span>Partly Cloudy</span>
+          <hr />
+          <div>
+            <span>Wind Speed:</span>
+            <span>2.5km/h</span>
+          </div>
+          <div>
+            <span>Wind Chill:</span>
+            <span>N/A</span>
+          </div>
+        </div>
+        <div class="news">
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            voluptatem quo, ad recusandae dolor a necessitatibus quod doloribus
+            atque voluptatibus veritatis est iusto obcaecati! Id!
+          </p>
+        </div>
         <section class="spotlights">
-          <div>Spotlight 1</div>
-          <div>Spotlight 2</div>
-          <div>Spotlight 3</div>
+          <div class="delivery">
+            <h2>Delivery Express</h2>
+            <img
+              class="delivery-img"
+              src="images/delivery.png"
+              alt="delivery image"
+            />
+            <p>delivery@mexico.com</p>
+          </div>
+          <div class="fix">
+            <h2>Fix Business troubles</h2>
+            <img class="fix-img" src="images/fix.png" alt="fix image" />
+            <p>getitfix@mexico.com</p>
+          </div>
+          <div class="web">
+            <h2>Have your website</h2>
+            <img class="web-img" src="images/website.gif" alt="web image" />
+            <p>webcity@mexico.com</p>
+          </div>
         </section>
       </article>
     </main>
@@ -93,5 +163,6 @@
       </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/banner.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @media only screen and (min-width: 64rem) {
   /* Header */
+
   .header_container {
     display: flex;
     justify-content: space-around;
@@ -8,6 +9,48 @@
 
   .heading {
     margin-left: -2rem;
+  }
+
+  .hero-join {
+    margin: 20px auto;
+    left: 0;
+    right: 0;
+  }
+
+  .hero-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .event > p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .join > a {
+    top: -25px;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .web {
+    text-align: center;
+  }
+
+  .web h2 {
+    text-shadow: -2px 1px 1px white;
+    margin: 0;
+    margin-top: 0.2rem;
+  }
+
+  .web-img {
+    width: 150px;
   }
 
   .grid_header {
@@ -31,6 +74,7 @@
   .navigation {
     display: flex;
   }
+
   .navigation li {
     display: block; /* change state in small view */
     flex: 1 1 auto;
@@ -53,8 +97,8 @@
 
   .grid_container div {
     width: 100%;
-    height: 200px;
-    background-color: grey;
+    height: 100%;
+    background-color: #e48240;
     padding: 0;
   }
 
@@ -67,7 +111,7 @@
 
   .grid_container div:nth-child(4) {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/3;
     width: 100%;
     margin: 0;
   }
@@ -92,25 +136,34 @@
     padding: 1rem;
   }
 
+  .spotlights > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .spotlights div:first-child {
     grid-column: 1/2;
     grid-row: 1/2;
     height: 100%;
     width: 100%;
+    justify-self: normal;
   }
 
   .spotlights div:nth-child(2) {
     grid-column: 1/2;
     grid-row: 2/3;
     height: 100%;
+    justify-self: normal;
   }
 
   .spotlights div:nth-child(3) {
-    display: block;
+    display: flex;
     grid-column: 1/2;
     grid-row: 3/4;
     height: 100%;
     border: 1px solid black;
+    justify-self: normal;
   }
 
   .grid_container div:nth-child(3) {
