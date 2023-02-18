@@ -65,7 +65,16 @@
     <main>
       <article class="grid_container">
         <div class="hero">
-          <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" />
+          <picture>
+            <source media="(max-width: 35rem)" srcset="images/200_small.jpg" />
+            <source media="(max-width: 64rem)" srcset="images/600_medium.jpg" />
+            <source
+              media="(max-width: 130rem)"
+              srcset="images/1100_large.jpg"
+            />
+            <img class="hero-img" src="images/orig.jpg" alt="picture test" />
+          </picture>
+          <!-- <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" /> -->
           <h3>Welcome to Business City</h3>
           <a href="index.html" class="hero-join">Join the Chamber </a>
         </div>
@@ -92,17 +101,17 @@
               src="images/whether.png"
               alt="wheter image"
             />
-            <span>33C</span>
+            <span id="temperature">10</span>
           </div>
           <span>Partly Cloudy</span>
           <hr />
           <div>
             <span>Wind Speed:</span>
-            <span>2.5km/h</span>
+            <span id="speed">5</span>
           </div>
           <div>
             <span>Wind Chill:</span>
-            <span>N/A</span>
+            <span id="chill">N/A</span>
           </div>
         </div>
         <div class="news">
@@ -164,5 +173,6 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
