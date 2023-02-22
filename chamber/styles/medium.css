@@ -145,4 +145,54 @@
     /* left: 30%; */
     top: 25px;
   }
+
+  /* Discover */
+  .discover {
+    display: block;
+    margin: 1rem 5vw;
+  }
+
+  .img_discover {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 50%;
+    max-width: 350px;
+    height: auto;
+    max-height: 200px;
+    transition: box-shadow 1s;
+  }
+
+  .img_discover:hover {
+    box-shadow: 5px 5px 20px 5px black;
+    /* animation: rotate 0.7s ease-in-out both; */
+  }
+
+  /* @keyframes rotate {
+    0% {
+      transform: rotate(0deg) tranlate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) tranlate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) tranlate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) tranlate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) tranlate3d(0, 0, 0);
+    }
+  } */
+
+  .discover_text {
+    margin-bottom: 7rem;
+    font-size: large;
+    text-align: left;
+  }
+
+  .discover_text6 {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
 }

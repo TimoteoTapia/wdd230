@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timoteo Tapia" />
+    <meta
+      name="description"
+      content="Week 4: Chamber Home Page Build - WDD 230"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Discover Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="heading">
+          <picture href="index.html"
+            ><img class="logo" src="images/transparent_logo.png" alt="logo"
+          /></picture>
+          <section>
+            <h1 class="headings">Business City</h1>
+            <div class="m">Chamber Of Commerce</div>
+          </section>
+        </div>
+        <section class="grid_header">
+          <div class="social">
+            <a target="_blank" href="https://facebook.com">
+              <img src="images/facebook_icon.png" alt="fb icon" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+              <img src="images/linkedin-icon.png" alt="linkedin icon" />
+            </a>
+          </div>
+          <nav id="nav">
+            <ul class="navigation">
+              <li><a id="menu" href="#"></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Discover</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <section class="current_date">
+        <div class="date"></div>
+        <aside></aside>
+      </section>
+    </header>
+    <main>
+      <div class="discover">
+        <picture class="img_discover1">
+          <img
+            class="img_discover"
+            src="images/discover/placeholder.gif"
+            data-src="images/discover/cathedral.jpg"
+            alt="cathedral"
+          />
+        </picture>
+        <p class="discover_text discover_text1">
+          The beating heart of the city lies within Centro Histórico, the vast
+          expanse of historical buildings and monuments that are a must when
+          exploring Mexico City. Places such as the Museo Biblioteca Palacio
+          Postal, Casa de los Azulejos and Palacio de Bellas Artes are the
+          perfect eye candy for anyone seeking to admire arts and architecture.
+        </p>
+        <picture class="img_discover2">
+          <img
+            class="img_discover"
+            src="images/discover/placeholder.gif"
+            data-src="images/discover/chapultepec.jpg"
+            alt="chapultepec"
+          />
+        </picture>
+        <p class="discover_text discover_text2">
+          Original construction of Chapultepec Castle began in 1785, but it was
+          only completed after Mexico achieved independence and later
+          refurbished as the home of Emperor Maximilian of Habsburg in 1864,
+          before becoming the residence of Mexico's presidents in 1882. It
+          remains one of two palaces in North America.
+        </p>
+        <picture class="img_discover3">
+          <img
+            class="img_discover"
+            src="images/discover/placeholder.gif"
+            data-src="images/discover/puebla.jpg"
+            alt="puebla"
+          />
+        </picture>
+        <p class="discover_text discover_text3">
+          Between the two ranges of the Sierra Madre, not far from volcanic
+          summits, Puebla is situated in a high fertile valley at 2,000 m. above
+          sea level. Southeast of Mexico, it was on the route that connected the
+          capital to the port of Vera Cruz, close to the pre-Hispanic city of
+          Cholula.
+        </p>
+        <picture class="img_discover4">
+          <img
+            class="img_discover"
+            src="images/discover/placeholder.gif"
+            data-src="images/discover/teotihuacan.jpg"
+            alt="teotihuacan"
+          />
+        </picture>
+        <p class="discover_text discover_text4">
+          Teotihuacan is an ancient Mesoamerican city located 30 miles (50 km)
+          northeast of modern-day Mexico City. The city, which was designated a
+          UNESCO World Heritage Site in 1987, was settled as early as 400 B.C.
+          and became the most powerful and influential city in the region by 400
+          A.D.
+        </p>
+        <picture class="img_discover5">
+          <img
+            class="img_discover"
+            src="images/discover/placeholder.gif"
+            data-src="images/discover/trajinera.jpg"
+            alt="trajinera"
+          />
+        </picture>
+        <p class="discover_text discover_text5">
+          Xochimilco is in the heart of the Anahuac Valley (Valley of Mexico).
+          Situated at 2,250 m. above sea level, they are surrounded by high
+          volcanic summits. The World Heritage Site includes the historic and
+          archaeological areas of the Templo Mayor and Xochimilco.
+        </p>
+      </div>
+      <p class="discover_text discover_text6"><span id="visits"></span></p>
+    </main>
+    <footer>
+      <section class="grid_footer">
+        <div>
+          <picture href="index.html"
+            ><img class="logo" src="images/logo.jpeg" alt="logo"
+          /></picture>
+          <div class="footer_title">
+            <span>Business City Chamber Of Commerce</span>
+            <span>14 Cheverria Polanco</span>
+            <span>Miguel Hidalgo, CDMX 0500</span>
+          </div>
+        </div>
+        <div>
+          <span> info@citymexico.com</span>
+          <span>+(52) 55 43 25 82 35</span>
+          <span>📍 Location Map</span>
+        </div>
+      </section>
+      <hr />
+      <div>
+        <span id="date2"></span>
+        <span>Kevin Tapia</span>
+        <span>WDD 230 Project</span>
+        <span id="lastModified"></span>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/intersectionAPI.js" defer></script>
+    <script src="scripts/localstorage.js"></script>
+  </body>
+</html>

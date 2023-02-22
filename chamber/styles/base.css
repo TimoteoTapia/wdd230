@@ -451,3 +451,52 @@ footer div:nth-child(3) span:nth-child(2) {
   font-weight: bold;
   font-size: 1rem;
 }
+
+/* Discover */
+
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  margin: 1rem 10vw;
+}
+
+.discover > picture {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.discover_text {
+  text-align: center;
+}
+
+.img_discover {
+  border: 2px solid black;
+  border-radius: 5%;
+  width: 250px;
+}
+
+.discover_text6 {
+  color: #1f4f70;
+  margin-bottom: 2rem;
+}
+
+.discover_text1 {
+  grid-row: 1/2;
+}
+
+.discover_text2 {
+  grid-row: span 1/4;
+}
+
+.discover_text3 {
+  grid-row: span 1/6;
+}
+
+.discover_text4 {
+  grid-row: span 1/8;
+}
+
+.discover_text5 {
+  grid-row: span 1/10;
+}

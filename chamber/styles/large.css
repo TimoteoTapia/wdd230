@@ -181,4 +181,89 @@
     position: relative;
     top: 0;
   }
+
+  /* Discover */
+  .discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+  }
+
+  .discover_text {
+    text-align: center;
+    margin: 0 2rem;
+    /* display: flex;
+
+    flex-direction: column;
+    justify-content: flex-end; */
+  }
+
+  .discover > picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_discover {
+    float: none;
+
+    width: 450px;
+    max-width: 700px;
+    max-height: 500px;
+    height: 270px;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+
+  .img_discover > img .discover_text1 {
+    grid-column: 1/2;
+  }
+
+  .img_discover1 {
+    grid-column: 1/2;
+  }
+
+  .discover_text2 {
+    grid-column: span 1/3;
+    grid-row: span 1/2;
+  }
+
+  .img_discover2 {
+    grid-column: span 1/3;
+    grid-row: span 1/3;
+  }
+
+  .discover_text3 {
+    grid-column: span 1/2;
+    grid-row: span 1/4;
+  }
+
+  .discover_text4 {
+    grid-column: span 1/3;
+    grid-row: span 1/4;
+  }
+
+  .img_discover4 {
+    grid-column: span 1/3;
+    grid-row: span 1/5;
+  }
+
+  .discover_text5 {
+    grid-column: 1/3;
+    grid-row: span 1/6;
+    text-align: center;
+    margin: 0 5rem;
+  }
+
+  .img_discover5 {
+    grid-column: 1/3;
+    /* grid-row: span 1/6; it doesn't let the hover works */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 2rem; */
+  }
+
+  .discover_text6 {
+    margin-bottom: 2rem;
+  }
 }
