@@ -1,0 +1,48 @@
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 1x solid rgb(188, 187, 187);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(213, 213, 213);
+}
+
+td {
+  border: 1px solid rgb(188, 187, 187);
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+th {
+  padding: 10px 20px;
+  font-size: larger;
+  font-size: 2rem;
+}
+
+tr {
+  border: 1px solid rgb(188, 187, 187);
+}
+
+thead tr:first-child,
+thead tr:nth-child(2) {
+  border: none;
+}
+td {
+  text-align: center;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.levels {
+  background-color: rgb(57, 55, 55);
+}
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  font-size: 1rem;
+}
