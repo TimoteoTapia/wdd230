@@ -195,4 +195,12 @@
     margin: 2rem 0 2rem 0;
     text-align: center;
   }
+
+  /*------ join Page -------*/
+  /*Table*/
+  td,
+  th {
+    padding: 7px 15px;
+    font-size: 0.8rem;
+  }
 }

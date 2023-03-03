@@ -500,3 +500,139 @@ footer div:nth-child(3) span:nth-child(2) {
 .discover_text5 {
   grid-row: span 1/10;
 }
+
+/*------ join Page -------*/
+/*Table*/
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(188, 187, 187);
+  /* letter-spacing: 1px; */
+  font-size: 0.5rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(213, 213, 213);
+}
+
+td {
+  border: 1px solid rgb(188, 187, 187);
+  padding: 5px 10px;
+  font-size: 0.5rem;
+}
+th {
+  padding: 5px 10px;
+  /* font-size: larger; */
+  font-size: 0.5rem;
+}
+
+tr {
+  border: 1px solid rgb(188, 187, 187);
+}
+
+thead tr:first-child,
+thead tr:nth-child(2) {
+  border: none;
+}
+td {
+  text-align: center;
+}
+
+.header {
+  background-color: #1f4f70;
+  color: white;
+  padding: 20px;
+}
+.level {
+  background-color: #e48240;
+}
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  font-size: 0.8rem;
+}
+
+/* Form*/
+form {
+  padding: 0 2%;
+  min-height: 20rem;
+  margin-bottom: 1rem;
+  max-width: 480px;
+  margin: auto;
+  padding: 0.5rem;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #e48240;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+}
+form legend {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+form label.top,
+form div {
+  display: block;
+  padding-top: 1.5rem;
+  color: black;
+  font-size: 1rem;
+}
+form label.top input {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: rgb(63, 63, 63);
+}
+form input.submitBtn {
+  display: block;
+  border: none;
+  background-color: #e48240;
+  color: black;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: auto;
+  width: 80%;
+  max-width: 300px;
+}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+.joinpage {
+  text-align: center;
+}
+
+.comment {
+  display: block;
+  width: 95%;
+  max-width: 400px;
+  height: 100px;
+}
+
+.thanksmain {
+  min-height: 400px;
+}
+.thankyou {
+  max-width: 480px;
+  margin: 30px auto;
+  border: 1px solid #bbb;
+  padding: 2rem;
+  /* background-color: #FEFAE0; */
+  /* background-color: #52b788; */
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+}

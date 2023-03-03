@@ -4,9 +4,194 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Timoteo Tapia" />
+    <meta
+      name="description"
+      content="Week 4: Chamber Home Page Build - WDD 230"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Join Page</title>
   </head>
   <body>
-    <h2>iniciando</h2>
+    <header>
+      <div class="header_container">
+        <div class="heading">
+          <picture href="index.html"
+            ><img class="logo" src="images/transparent_logo.png" alt="logo"
+          /></picture>
+          <section>
+            <h1 class="headings">Business City</h1>
+            <div class="m">Chamber Of Commerce</div>
+          </section>
+        </div>
+        <section class="grid_header">
+          <div class="social">
+            <a target="_blank" href="https://facebook.com">
+              <img src="images/facebook_icon.png" alt="fb icon" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+              <img src="images/linkedin-icon.png" alt="linkedin icon" />
+            </a>
+          </div>
+          <nav id="nav">
+            <ul class="navigation">
+              <li><a id="menu" href="#"></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="join.html">Join us</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <section class="current_date">
+        <div class="date"></div>
+        <aside></aside>
+      </section>
+    </header>
+    <main>
+      <h1 class="joinpage">Join Our Chamber!</h1>
+      <table>
+        <caption>
+          Adjustable to changes
+        </caption>
+        <thead class="header">
+          <tr>
+            <th colspan="5" scope="colgroup" id="membership">Membership level</th>
+          </tr>
+          <tr>
+            <th>&nbsp;</th>
+            <th class="level" scope="col" header="membership">Non Profit</th>
+            <th class="level" scope="col" header="membership">Bronze</th>
+            <th class="level" scope="col" header="membership">Silver</th>
+            <th class="level" scope="col" header="membership">Gold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Content Access</th>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising</th>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th scope="row">Trainings</th>
+            <td>❌</td>                                                                                                                                                                                       </td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th scope="row">Event discounts</th>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th scope="row">Price</th>
+            <td>FREE</td>
+            <td>$150/year</td>
+            <td>$350/year</td>
+            <td>$500/year</td>
+          </tr>
+        </tbody>
+      </table>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top">First Name* <input type="text" name="fname" required /></label>
+          <label class="top">Last Name* <input type="text" name="lname" required /></label>
+          <label class="top">Business Title <input type="text" name="btitle" pattern="^(?=.*)[a-zA-Z\s\-]{7,}$" /></label>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone*
+            <input type="tel" name="phone" placeholder="1235551234" required
+          /></label>
+          <label class="top"
+            >Business Name* <input type="text" name="bname" required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <div>Choose your membership:</div>
+              <label class="sbs"
+                ><input type="radio" name="audience" value="np" /> NP</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="audience" value="bronze" />
+                Bronze</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="audience" value="silver" />
+                Silver</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="audience" value="gold" /> Gold ⭐</label
+              >
+        </fieldset>
+        <fieldset>
+          <legend>Business Information</legend>
+          <label class="top"
+            >Briefly describe your business.
+            <textarea class="comment" name="comments"></textarea>
+          </label>
+          <input type="hidden" id="dateTime" />
+        </fieldset>
+
+        <label
+          ><input
+            type="submit"
+            value="Join to Business City"
+            class="submitBtn"
+        /></label>
+      </form>
+    </main>
+    <footer>
+      <section class="grid_footer">
+        <div>
+          <picture href="index.html"
+            ><img class="logo" src="images/logo.jpeg" alt="logo"
+          /></picture>
+          <div class="footer_title">
+            <span>Business City Chamber Of Commerce</span>
+            <span>14 Cheverria Polanco</span>
+            <span>Miguel Hidalgo, CDMX 0500</span>
+          </div>
+        </div>
+        <div>
+          <span> info@citymexico.com</span>
+          <span>+(52) 55 43 25 82 35</span>
+          <span>📍 Location Map</span>
+        </div>
+      </section>
+      <hr />
+      <div>
+        <span id="date2"></span>
+        <span>Kevin Tapia</span>
+        <span>WDD 230 Project</span>
+        <span id="lastModified"></span>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -266,4 +266,16 @@
   .discover_text6 {
     margin-bottom: 2rem;
   }
+
+  /*------ join Page -------*/
+  /*Table*/
+  td,
+  th {
+    padding: 15px 25px;
+    font-size: 1.3rem;
+  }
+
+  .comment {
+    height: 150px;
+  }
 }
