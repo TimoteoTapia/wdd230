@@ -278,4 +278,8 @@
   .comment {
     height: 150px;
   }
+
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
 }
