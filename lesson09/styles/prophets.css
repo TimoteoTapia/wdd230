@@ -1,0 +1,31 @@
+* {
+  font-family: Cambria, Cochin, "Times New Roman", serif;
+  text-align: center;
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+  box-shadow: 0 0 50px #777;
+  padding: 40px;
+}
+
+header,
+footer {
+  padding: 30px;
+}
+div.cards section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #ffb71b;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  box-shadow: 0 0 30px rgb(43, 40, 40);
+}
