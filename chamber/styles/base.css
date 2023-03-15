@@ -636,3 +636,66 @@ form label.top input:required:valid {
   display: grid;
   align-items: center;
 }
+
+/* Directory Page */
+
+.directory {
+  margin: 30px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  grid-row-gap: 30px;
+  padding: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.grid section {
+  border: 3px solid #1f4f70;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px 3px #777;
+  padding: 1rem;
+}
+
+.menu {
+  margin: 1rem auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  padding: 0.6rem;
+  text-align: center;
+}
+.menu button {
+  padding: 1rem;
+  font-weight: 800;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.list section {
+  text-align-last: left;
+  padding: 1rem;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none;
+}
+
+.list section:nth-child(even),
+.list section:nth-child(even) > a {
+  background-color: #1f4f70;
+  color: white;
+}
+
+.list section:nth-child(odd) {
+  background-color: #e48240;
+}

@@ -282,4 +282,19 @@
   form label.sbs {
     padding: 0.4rem 0;
   }
+
+  /*------ Directory Page --------*/
+  .list {
+    margin: 2rem;
+  }
+
+  .list section {
+    padding: 1rem 0.3rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .list section > * {
+    margin: 0 0.5rem;
+  }
 }

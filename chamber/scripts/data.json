@@ -1,0 +1,76 @@
+{
+  "directory": [
+    {
+      "name": "Mexico Lindo",
+      "address": "Polanco, Miguel Hidlago, Eje Central 2",
+      "phone": "55-46458365",
+      "website": "https://mexilindo.mx",
+      "image": "images/chamber1.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Teotiguacan",
+      "address": "Teotihucan, El maguey 42 ",
+      "phone": "55-54215235",
+      "website": "https://teotiguacan.com",
+      "image": "images/chamber2.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Donpon",
+      "address": "Polanco, Miguel Aleman 145",
+      "phone": "55-42365247",
+      "website": "https://donponmex.mx",
+      "image": "images/chamber3.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Torti Mex",
+      "address": "Reforma, Republica dominicana 245",
+      "phone": "55-42123585",
+      "website": "https://tortillastoti.mex",
+      "image": "images/chamber4.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Salamanca",
+      "address": "Reforma, Avenida de los poetas, eje 42",
+      "phone": "55-24369615",
+      "website": "http://salamancacentro.com",
+      "image": "images/chamber5.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Mariscos Sotillo",
+      "address": "Bellas artes, Republica de uruguay 25",
+      "phone": "55-95453612",
+      "website": "https://restaurantesmexi.com",
+      "image": "images/chamber6.png",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Institucion Avila Villa Martinez",
+      "address": "Benito Juares, Doctores av.45",
+      "phone": "55-41236522",
+      "website": "https://univdeavila.com",
+      "image": "images/chamber7.png",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Oficinas Virtuales",
+      "address": "Benito Juares, Aleman 15",
+      "phone": "55-75259665",
+      "website": "https://abogadosentodo.mx",
+      "image": "images/chamber8.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Hospital administradores",
+      "address": "Miguel Angel,Centro Medico av. eje central 5",
+      "phone": "55-95452585",
+      "website": "https://admimex.mx",
+      "image": "images/chamber9.png",
+      "membership": "Bronze"
+    }
+  ]
+}

@@ -203,4 +203,27 @@
     padding: 7px 15px;
     font-size: 0.8rem;
   }
+
+  /*------ Directory Page --------*/
+  .list {
+    margin: 1rem 0.2rem;
+  }
+
+  .list section {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 0.5fr 1fr;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .list section > * {
+    margin: 0 0.3rem;
+  }
+  /* .list section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  } */
 }
