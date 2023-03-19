@@ -66,13 +66,20 @@
       <article class="grid_container">
         <div class="hero">
           <picture>
+            <!-- <source media="(max-width: 35rem)" srcset="images/200_small.jpg" />
+            <source media="(max-width: 64rem)" srcset="images/600_medium.jpg" />
+            <source
+              media="(max-width: 130rem)"
+              srcset="images/1100_large.jpg"
+            /> -->
             <source media="(max-width: 35rem)" srcset="images/200_small.jpg" />
             <source media="(max-width: 64rem)" srcset="images/600_medium.jpg" />
             <source
               media="(max-width: 130rem)"
               srcset="images/1100_large.jpg"
             />
-            <img class="hero-img" src="images/orig.jpg" alt="picture test" />
+            <!-- <img class="hero-img" src="images/orig.jpg" alt="picture test" /> -->
+            <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" />
           </picture>
           <!-- <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" /> -->
           <h3>Welcome to Business City</h3>
@@ -100,10 +107,11 @@
               class="whether-img"
               src="images/whether.png"
               alt="wheter image"
+              loading="lazy"
             />
-            <span id="temperature">10</span>
+            <span id="temperature"></span>
           </div>
-          <span>Partly Cloudy</span>
+          <span id="desc"></span>
           <hr />
           <div>
             <span>Wind Speed:</span>
