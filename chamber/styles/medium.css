@@ -1,8 +1,7 @@
 @media only screen and (min-width: 35rem) {
   /* Main */
   .hero-img {
-    position: relative;
-    object-fit: cover;
+    height: 100%;
   }
 
   .delivery {

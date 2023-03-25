@@ -72,18 +72,28 @@
               media="(max-width: 130rem)"
               srcset="images/1100_large.jpg"
             /> -->
-            <source media="(max-width: 35rem)" srcset="images/200_small.jpg" />
-            <source media="(max-width: 64rem)" srcset="images/600_medium.jpg" />
+            <source
+              media="(max-width: 35rem)"
+              srcset="images/hero-img-assets/520x300hero-img.png"
+            />
+            <source
+              media="(max-width: 64rem)"
+              srcset="images/hero-img-assets/950x400hero-img.png"
+            />
             <source
               media="(max-width: 130rem)"
-              srcset="images/1100_large.jpg"
+              srcset="images/hero-img-assets/750x500hero-img.png"
             />
             <!-- <img class="hero-img" src="images/orig.jpg" alt="picture test" /> -->
-            <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" />
+            <img
+              class="hero-img"
+              src="images/hero-img-assets/950x400hero-img.png"
+              alt="hero image"
+            />
           </picture>
           <!-- <img class="hero-img" src="images/hero-img.jpeg" alt="hero image" /> -->
           <h3>Welcome to Business City</h3>
-          <a href="index.html" class="hero-join">Join the Chamber </a>
+          <a href="join.html" class="hero-join">Join the Chamber </a>
         </div>
         <div class="event">
           <h2>Meet Our Events</h2>
@@ -92,10 +102,10 @@
             Join us for the grand opening of The Best Business, Thursday at
             1:00pm
           </p>
-          <a href="#">more info ...</a>
+          <a href="discover.html">more info ...</a>
         </div>
         <div class="join">
-          <a href="index.html" class="hero-join">Join Us</a>
+          <a href="join.html" class="hero-join">Join Us</a>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ips
           </p>
@@ -131,7 +141,7 @@
           </p>
         </div>
         <section class="spotlights">
-          <div class="delivery">
+          <!-- <div class="delivery">
             <h2>Delivery Express</h2>
             <img
               class="delivery-img"
@@ -149,7 +159,7 @@
             <h2>Have your website</h2>
             <img class="web-img" src="images/website.gif" alt="web image" />
             <p>webcity@mexico.com</p>
-          </div>
+          </div> -->
         </section>
       </article>
     </main>
@@ -182,5 +192,6 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/spotlights.js" defer></script>
   </body>
 </html>

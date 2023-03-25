@@ -26,7 +26,7 @@ const displayResults = (weatherData) => {
 
   document.querySelector("#temperature").textContent = `${Math.round(
     temperature
-  )}\u00B0C`;
+  )} \u00B0F`;
   const desc = weatherData.weather[0].description;
   document.querySelector("#desc").textContent = desc
     .split(" ")

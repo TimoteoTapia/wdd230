@@ -335,8 +335,9 @@ navigation a:active {
   width: 120px;
 }
 
-.delivery p {
-  margin-top: -0.8rem;
+.delivery p,
+.fix > p {
+  margin: 0.5rem 0;
 }
 
 .fix-img {
@@ -646,7 +647,7 @@ form label.top input:required:valid {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   grid-gap: 20px;
   grid-row-gap: 30px;
   padding: 2rem;
