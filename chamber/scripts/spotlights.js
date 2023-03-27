@@ -17,7 +17,7 @@ const displayDirectory = (data) => {
   const test = data.filter((item) =>
     ["Gold", "Silver"].includes(item.membership)
   );
-
+  // make the random selection
   const businesses = [];
   const random1 = getRandomInt(test.length);
   businesses[0] = test[random1];
@@ -50,22 +50,19 @@ const displayDirectory = (data) => {
     let card = document.createElement("div");
     let name = document.createElement("h2");
     let portrait = document.createElement("img");
-    // let address = document.createElement("p");
     let phone = document.createElement("p");
     let link = document.createElement("a");
 
     // Build the p content to show the business name
     name.textContent = directory.name;
 
-    // Build the p content to show the business address
-    // address.textContent = directory.address;
-
     // Build the p content to show the phone
-    phone.textContent = directory.phone;
+    phone.textContent = `Phone: ${directory.phone}`;
 
     // Build the p content to show the website url
     link.href = directory.website;
-    var link2 = document.createTextNode("Website");
+    link.target = "_blank";
+    var link2 = document.createTextNode("Click here");
     link.appendChild(link2);
 
     if (counter == 1) {
@@ -86,10 +83,8 @@ const displayDirectory = (data) => {
     // Append the section(card) with the created elements
     card.appendChild(name);
     card.appendChild(portrait);
-    // card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(link);
-
     cards.appendChild(card);
   }); // end of forEach loop
 }; // end of function expression

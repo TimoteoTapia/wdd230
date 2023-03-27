@@ -453,6 +453,15 @@ footer div:nth-child(3) span:nth-child(2) {
   font-size: 1rem;
 }
 
+.location {
+  text-decoration: none;
+  color: yellow;
+}
+
+.location:hover {
+  color: #e48240;
+}
+
 /* Discover */
 
 .discover {
@@ -699,4 +708,49 @@ form label.top input:required:valid {
 
 .list section:nth-child(odd) {
   background-color: #e48240;
+}
+
+/*------- Contact Page -------*/
+.contact-section {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-text {
+  display: block;
+  width: 95%;
+  max-width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  border: solid 1px #999;
+  border-left: red solid 6px;
+}
+
+.contact-line {
+  border: 2px solid #1f4f70;
+  background-color: #1f4f70;
+}
+
+.legend_touch {
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+iframe {
+  margin: 0.8rem;
+  width: 95%;
+}
+
+.directors {
+  text-align: center;
+}
+
+.card-img {
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.background section {
+  margin: 4rem 0;
 }

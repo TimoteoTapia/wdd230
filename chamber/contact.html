@@ -57,15 +57,89 @@
         <aside></aside>
       </section>
     </header>
-    <main>
-      <h1 class="directory">Business Directory</h1>
-      <div class="menu">
-        <button id="grid">⏹️ Grid</button>
-        <button id="list">📄 List</button>
-      </div>
+    <main class="contact-grid">
+      <section class="contact-section">
+        <h1>Contact Us</h1>
 
-      <div class="grid"></div>
+        <h4>The Business City Chamber</h4>
+        <p>Eje Central Lazaro Cardenas 14</p>
+        <p>Colonia Centro, Cuauhtemoc</p>
+        <br />
+        <p>55 4585-4567</p>
+        <p>info@citymexico.com</p>
+        <br />
+        <hr / class="contact-line">
+      </section>
+      <form class="contact-form" method="get" action="thanks.html">
+        <fieldset>
+          <legend class="legend_touch">Get in Touch</legend>
+          <label class="top"
+            >Name*
+            <input class="input-contact" type="text" name="name" required
+          /></label>
+          <label class="top"
+            >Email*
+            <input
+              class="input-contact"
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Question/Concern*
+            <textarea class="contact-text" name="comments" required></textarea>
+          </label>
+          <input type="hidden" id="dateTime" />
+        </fieldset>
+
+        <input type="submit" value="Send Question" class="submitBtn" />
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7524.983042312715!2d-99.1414294284343!3d19.434363863680222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f942a8c8a789%3A0xd1e32c07cc9c63ae!2sEdifico%20La%20Nacional!5e0!3m2!1sen!2smx!4v1679794132400!5m2!1sen!2smx"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <br />
+
+      <section class="directors">
+        <h1>Board of Directors</h1>
+        <div class="background">
+          <section class="vicepresident">
+            <h2>Vice-President</h2>
+            <img
+              class="card-img"
+              src="images/vicepresident.PNG"
+              alt="river in forest"
+            />
+            <h3>Karla Aragon</h3>
+          </section>
+          <section class="president">
+            <h2>President</h2>
+            <img
+              class="card-img"
+              src="images/president.PNG"
+              alt="tent in mountains"
+            />
+            <h3>Marco Gimenez</h3>
+          </section>
+          <section class="administration">
+            <h2>Administration</h2>
+            <img
+              class="card-img"
+              src="images/administration.PNG"
+              alt="rafting boat"
+            />
+            <h3>Rogelio Coraza</h3>
+          </section>
+        </div>
+      </section>
     </main>
+
     <footer>
       <section class="grid_footer">
         <div>
@@ -95,7 +169,6 @@
         <span id="lastModified"></span>
       </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
