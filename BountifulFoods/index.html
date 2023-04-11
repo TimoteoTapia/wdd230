@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timoteo Tapia" />
+    <meta
+      name="description"
+      content="Final Project: Bountiful Foods - WDD 230"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <!-- <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" /> -->
+    <title>Bountiful Foods</title>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="header">
+          <div class="header_container">
+            <picture>
+              <a href="index.html"
+                ><img class="logo" src="images/logo.png" alt="logo" /></a
+            ></picture>
+            <h1 class="headings">Bountiful Foods</h1>
+          </div>
+          <p id="menu"></p>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <article class="grid_container">
+        <div class="hero">
+          <picture>
+            <source
+              media="(max-width: 35rem)"
+              srcset="images/fruits_hero-assets/small.png"
+            />
+            <source
+              media="(max-width: 64rem)"
+              srcset="images/fruits_hero-assets/medium.png"
+            />
+            <source
+              media="(max-width: 130rem)"
+              srcset="images/fruits_hero-assets/large.png"
+            />
+            <img class="hero-img" src="images/fruits.webp" alt="hero image" />
+          </picture>
+          <h2>We have the best mixes and healthy juices</h2>
+          <a href="fresh.html">Start your drinking</a>
+        </div>
+        <div class="main">
+          <section class="main-section">
+            <h2 class="main-title">Bountiful Foods in Carlsbad, California</h2>
+            <img src="images/coast.jpg" alt="Los Angeles" loading="lazy" />
+            <p>
+              "We are recommending these Northern California beach town in
+              Carlsbad because they represent a diversity of the region’s
+              geographic terrain and natural beauty. Some of these coastal
+              cities are easy to get to, which pays of the “quick” part of a
+              quick weekend getaway. But others are more remote, which offers a
+              payoff for those of you who really want to get a way from it all.
+              We are also throwing in a few not-so-obvious choices, just to keep
+              you guessing. All told, we’ve curated a cool dozen Northern
+              California coastal cities and beach towns that you should put on
+              your bucket list.”
+            </p>
+          </section>
+        </div>
+        <div class="card1">
+          <div id="weather">
+            <h3 class="weatherTitle">Weather Today in Carlsbad, California:</h3>
+            <div class="one">
+              <img id="weatherPic" src="#" alt="Weather picture" />
+              <span id="temperature"></span>
+            </div>
+            <p id="tempdesc"></p>
+            <p><span>Humidity: </span> <span id="humidity"></span></p>
+          </div>
+          <div id="weather1">
+            <h3 class="day"><span> </span></h3>
+            <img class="weatherIcon" src="#" alt="Weather Icon" />
+            <p class="temperature"><span></span></p>
+            <p class="tempdescrip"></p>
+            <p><span>Humidity: </span> <span class="humid"></span></p>
+          </div>
+          <div id="weather2">
+            <h3 class="day"><span></span></h3>
+            <img class="weatherIcon" src="#" alt="Weather Icon" />
+            <p class="temperature"><span></span></p>
+            <p class="tempdescrip"></p>
+            <p><span>Humidity: </span> <span class="humid"></span></p>
+          </div>
+          <div id="weather3">
+            <h3 class="day"><span></span></h3>
+            <img class="weatherIcon" src="#" alt="Weather Icon" />
+            <p class="temperature"><span></span></p>
+            <p class="tempdescrip"></p>
+            <p><span>Humidity: </span> <span class="humid"></span></p>
+          </div>
+        </div>
+        <p>
+          <span class="label">Total number of drinks submitted: </span>
+          <span class="submissions"></span>
+        </p>
+      </article>
+    </main>
+    <footer>
+      <section class="grid_footer">
+        <div>
+          <picture href="index.html"
+            ><a href="index.html"
+              ><img class="logo" src="images/logo.png" alt="logo" /></a
+          ></picture>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook_icon.png" alt="facebook icon"
+            /></a>
+            <a href="https://linkedin.com" target="_blank">
+              <img src="images/linkedin-icon.png" alt="linkedin-icon"
+            /></a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter_icon.webp" alt="twitter icon"
+            /></a>
+          </div>
+          <div class="footer_title">
+            <span>Bountiful Foods</span>
+            <span>70 Main St,</span>
+            <span>Carlsbad, CA 92008</span>
+          </div>
+        </div>
+        <div>
+          <span> info@bountifoods.com</span>
+          <span>(760) 123-4567</span>
+          <a class="location" href="about.html"><span>📍 Location Map</span></a>
+        </div>
+      </section>
+      <hr />
+      <div>
+        <span id="date2"></span>
+        <span>Kevin Tapia</span>
+        <span>WDD 230 Project</span>
+        <span id="lastModified"></span>
+      </div>
+    </footer>
+  </body>
+</html>

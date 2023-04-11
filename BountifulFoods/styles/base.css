@@ -1,0 +1,390 @@
+:root {
+  --primary-color: #ffa500;
+  --secondary-color: #ffdab9;
+  --accent1-color: #ffe4c4;
+  --accent2-color: #fff8dc;
+  --accent3-color: #ffffff;
+  --accent4-color: #333333;
+
+  --primary-font: "Kaushan Script";
+  --secondary-font: "Comfortaa";
+}
+
+/*----- Global ------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--secondary-font), sans-serif, Helvetica;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--primary-font), sans-serif, Helvetica;
+}
+
+h3 {
+  font-family: var(--secondary-font), sans-serif, Helvetica;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------- Mobile View ---------*/
+
+/* Header*/
+
+header {
+  background-color: #e48240;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1rem;
+}
+
+.header_container picture {
+  display: flex;
+  align-items: center;
+}
+
+.header_container a {
+  display: block;
+}
+
+.logo {
+  width: 5rem;
+  margin-left: -0.7rem;
+  height: auto;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 3px white);
+}
+
+/*Hamburger Menu*/
+.navigation {
+  list-style: none;
+  position: absolute;
+}
+
+.responsive {
+  position: relative;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0; /*margin and padding 0 to eliminate the starting space*/
+  padding: 0;
+}
+
+.navigation li {
+  display: none;
+}
+
+.responsive li {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem 1.5rem;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.responsive li a:hover {
+  color: white;
+  background-color: black;
+}
+
+#menu {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #ff7b00;
+  color: white;
+  height: 40px;
+  margin: auto 0;
+  align-items: center;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.responsive::before {
+  content: "X";
+}
+
+/* Main */
+/* Hero section*/
+
+.grid_container {
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #cccccc;
+}
+
+.hero > h2 {
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-shadow: -2px 2px white;
+}
+
+.hero > a {
+  position: absolute;
+  text-decoration: none;
+  background-color: #1f4f70;
+  color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  width: 180px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 0 5px 2px white;
+}
+
+/* main content*/
+.main {
+  margin: 1.5rem 1rem;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-section {
+  text-align: center;
+}
+
+.main-section img {
+  width: 350px;
+  height: 220px;
+}
+
+.main-section p {
+  font-size: 1.1rem;
+  padding: 1rem 0.5rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1f4f70;
+  color: white;
+  padding: 0.5rem 3vw;
+  /* margin-top: -50px; */
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+  padding: 0;
+}
+.social img {
+  width: 2em;
+  margin: 0 0.5rem;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.grid_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+
+.footer_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+}
+
+footer span {
+  margin: 0.1rem 0;
+}
+
+.footer_title span:first-child {
+  margin: 0.1rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+hr {
+  height: 1px;
+  background-color: #e48240;
+  border: none;
+  width: 95%;
+}
+
+footer div:nth-child(3) {
+  font-size: 0.8rem;
+}
+
+footer div:nth-child(3) span:nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.location {
+  text-decoration: none;
+  color: yellow;
+}
+
+.location:hover {
+  color: #e48240;
+}
+
+.card1 {
+  margin: 1.5rem;
+  width: 90%;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+#weather {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+#weather1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#weather2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#weather3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+form {
+  max-width: 480px;
+  margin: auto;
+  padding: 0.5rem;
+  align-items: center;
+  margin-bottom: 100px;
+  /* background-image: linear-gradient(
+    to bottom,
+    rgb(178, 231, 112),
+    rgb(225, 169, 14)
+  ); */
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #a99344;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form legend {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+form input.submitBtn {
+  border: none;
+  /* background-color: #8ee135; */
+  background-color: #3d3d3b;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  /* margin: auto; */
+  width: 96%;
+  max-width: 20rem;
+}
+form input.submitBtn:hover {
+  background-color: rgb(144, 232, 29);
+  color: black;
+}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+.request {
+  text-align: center;
+  margin-top: 100px;
+}
+textarea {
+  width: 320px;
+  height: 100px;
+}
+.label,
+.submissions {
+  font-family: "Berkshire Swash", Arial, sans-serif;
+  font-size: 1.5em;
+}
+.visits {
+  color: greenyellow;
+}
+
+.main-about {
+  text-align: center;
+}

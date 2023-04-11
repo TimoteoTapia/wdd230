@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timoteo Tapia" />
+    <meta
+      name="description"
+      content="Final Project: Bountiful Foods - WDD 230"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <!-- <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" /> -->
+    <title>Bountiful Foods</title>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="header">
+          <div class="header_container">
+            <picture>
+              <a href="index.html"
+                ><img class="logo" src="images/logo.png" alt="logo" /></a
+            ></picture>
+            <h1 class="headings">Bountiful Foods</h1>
+          </div>
+          <p id="menu"></p>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <h1 class="request">Create Your Drink!</h1>
+
+      <form onsubmit="drinkSubmission(); return false;">
+        <fieldset>
+          <label class="top"
+            >First Name* <input type="text" name="fname" id="name" required
+          /></label>
+          <label class="top"
+            >Email* <input type="email" name="email" id="email" required
+          /></label>
+          <label class="top"
+            >Phone*
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="123-456-7890"
+              required
+          /></label>
+          <br />
+          <label class="top" for="fruits1">Please choose 3 fruits:</label>
+          <select name="fruits" id="fruits1" required>
+            <option value="">First fruit</option>
+          </select>
+          <select name="fruits" id="fruits2" required>
+            <option value="">Second fruit</option>
+          </select>
+          <select name="fruits" id="fruits3" required>
+            <option value="">Third fruit</option>
+          </select>
+
+          <br />
+          <br />
+          <label class="top"
+            >Any Special Instructions?
+            <textarea name="comments" id="comments"></textarea>
+          </label>
+          <input type="hidden" id="dateTime" />
+        </fieldset>
+
+        <input type="submit" value="Create Drink" class="submitBtn" />
+      </form>
+    </main>
+    <footer>
+      <section class="grid_footer">
+        <div>
+          <picture href="index.html"
+            ><a href="index.html"
+              ><img class="logo" src="images/logo.png" alt="logo" /></a
+          ></picture>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook_icon.png" alt="facebook icon"
+            /></a>
+            <a href="https://linkedin.com" target="_blank">
+              <img src="images/linkedin-icon.png" alt="linkedin-icon"
+            /></a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter_icon.webp" alt="twitter icon"
+            /></a>
+          </div>
+          <div class="footer_title">
+            <span>Bountiful Foods</span>
+            <span>70 Main St,</span>
+            <span>Carlsbad, CA 92008</span>
+          </div>
+        </div>
+        <div>
+          <span> info@bountifoods.com</span>
+          <span>(760) 123-4567</span>
+          <a class="location" href="#"><span>📍 Location Map</span></a>
+        </div>
+      </section>
+      <hr />
+      <div>
+        <span id="date2"></span>
+        <span>Kevin Tapia</span>
+        <span>WDD 230 Project</span>
+        <span id="lastModified"></span>
+      </div>
+    </footer>
+  </body>
+</html>
